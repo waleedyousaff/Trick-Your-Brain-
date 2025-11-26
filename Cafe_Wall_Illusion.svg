@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+	version="1.1" width="960px" height="580px" viewBox="-20,-20,960,580">
+	<defs>
+		<clipPath id="ClipIt">
+			<rect x="0" y="-1" width="920" height="542" />
+		</clipPath>
+	</defs>
+	<rect x="-20" y="-20" width="960" height="760" style="stroke:none;fill:#ffffff;" />
+	<g id="blocks" style="fill-rule :evenodd; stroke :none; clip-path :url(#ClipIt);">
+		<g transform="translate(0,0)">
+			<rect x="0"   y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.1;" />
+			<rect x="80"  y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.9;" />
+			<rect x="160" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.1;" />
+			<rect x="240" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.9;" />
+			<rect x="320" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.1;" />
+			<rect x="400" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.9;" />
+			<rect x="480" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.1;" />
+			<rect x="560" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.9;" />
+			<rect x="640" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.1;" />
+			<rect x="720" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.9;" />
+			<rect x="800" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.1;" />
+			<rect x="880" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.9;" />
+		</g>
+		<g transform="translate(-40,60)">
+			<rect x="0"   y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.1;" />
+			<rect x="80"  y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.9;" />
+			<rect x="160" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.1;" />
+			<rect x="240" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.9;" />
+			<rect x="320" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.1;" />
+			<rect x="400" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.9;" />
+			<rect x="480" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.1;" />
+			<rect x="560" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.9;" />
+			<rect x="640" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.1;" />
+			<rect x="720" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.9;" />
+			<rect x="800" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.1;" />
+			<rect x="880" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.9;" />
+		</g>
+		<g transform="translate(0,120)">
+			<rect x="0"   y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.1;" />
+			<rect x="80"  y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.9;" />
+			<rect x="160" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.1;" />
+			<rect x="240" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.9;" />
+			<rect x="320" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.1;" />
+			<rect x="400" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.9;" />
+			<rect x="480" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.1;" />
+			<rect x="560" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.9;" />
+			<rect x="640" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.1;" />
+			<rect x="720" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.9;" />
+			<rect x="800" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.1;" />
+			<rect x="880" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.9;" />
+		</g>
+		<g transform="translate(-40,180)">
+			<rect x="0"   y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.1;" />
+			<rect x="80"  y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.9;" />
+			<rect x="160" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.1;" />
+			<rect x="240" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.9;" />
+			<rect x="320" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.1;" />
+			<rect x="400" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.9;" />
+			<rect x="480" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.1;" />
+			<rect x="560" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.9;" />
+			<rect x="640" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.1;" />
+			<rect x="720" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.9;" />
+			<rect x="800" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.1;" />
+			<rect x="880" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.9;" />
+		</g>
+		<g transform="translate(0,240)">
+			<rect x="0"   y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.1;" />
+			<rect x="80"  y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.9;" />
+			<rect x="160" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.1;" />
+			<rect x="240" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.9;" />
+			<rect x="320" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.1;" />
+			<rect x="400" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.9;" />
+			<rect x="480" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.1;" />
+			<rect x="560" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.9;" />
+			<rect x="640" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.1;" />
+			<rect x="720" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.9;" />
+			<rect x="800" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.1;" />
+			<rect x="880" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.9;" />
+		</g>
+		<g transform="translate(-40,300)">
+			<rect x="0"   y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.1;" />
+			<rect x="80"  y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.9;" />
+			<rect x="160" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.1;" />
+			<rect x="240" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.9;" />
+			<rect x="320" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.1;" />
+			<rect x="400" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.9;" />
+			<rect x="480" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.1;" />
+			<rect x="560" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.9;" />
+			<rect x="640" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.1;" />
+			<rect x="720" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.9;" />
+			<rect x="800" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.1;" />
+			<rect x="880" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.9;" />
+		</g>
+		<g transform="translate(0,360)">
+			<rect x="0"   y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.1;" />
+			<rect x="80"  y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.9;" />
+			<rect x="160" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.1;" />
+			<rect x="240" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.9;" />
+			<rect x="320" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.1;" />
+			<rect x="400" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.9;" />
+			<rect x="480" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.1;" />
+			<rect x="560" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.9;" />
+			<rect x="640" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.1;" />
+			<rect x="720" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.9;" />
+			<rect x="800" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.1;" />
+			<rect x="880" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.9;" />
+		</g>
+		<g transform="translate(-40,420)">
+			<rect x="0"   y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.1;" />
+			<rect x="80"  y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.9;" />
+			<rect x="160" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.1;" />
+			<rect x="240" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.9;" />
+			<rect x="320" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.1;" />
+			<rect x="400" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.9;" />
+			<rect x="480" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.1;" />
+			<rect x="560" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.9;" />
+			<rect x="640" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.1;" />
+			<rect x="720" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.9;" />
+			<rect x="800" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.1;" />
+			<rect x="880" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.9;" />
+		</g>
+		<g transform="translate(0,480)">
+			<rect x="0"   y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.1;" />
+			<rect x="80"  y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.9;" />
+			<rect x="160" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.1;" />
+			<rect x="240" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.9;" />
+			<rect x="320" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.1;" />
+			<rect x="400" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.9;" />
+			<rect x="480" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.1;" />
+			<rect x="560" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.9;" />
+			<rect x="640" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.1;" />
+			<rect x="720" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.9;" />
+			<rect x="800" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.1;" />
+			<rect x="880" y="0" width="80" height="60" style="fill:#000000;fill-opacity:0.9;" />
+		</g>
+		<g style="stroke:#999999;stroke-width:2;stroke-linecap:butt;">
+			<path d="M 0,0   920,0  " />
+			<path d="M 0,60  920,60 " />
+			<path d="M 0,120 920,120" />
+			<path d="M 0,180 920,180" />
+			<path d="M 0,240 920,240" />
+			<path d="M 0,300 920,300" />
+			<path d="M 0,360 920,360" />
+			<path d="M 0,420 920,420" />
+			<path d="M 0,480 920,480" />
+			<path d="M 0,540 920,540" />
+		</g>
+	</g>
+	<rect x="-10" y="-10" width="940" height="560" style="fill:none;stroke:#000000;stroke-width:2;stroke-linejoin:square;" />
+</svg>

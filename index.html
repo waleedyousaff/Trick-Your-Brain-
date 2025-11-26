@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trick Your Brain</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .fade { transition: opacity 0.8s ease-in-out; }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-gray-900 to-black text-white flex flex-col items-center justify-center min-h-screen p-6">
+
+  <!-- Title Screen -->
+  <div id="start-screen" class="text-center space-y-6 fade">
+    <h1 class="text-5xl font-extrabold animate-pulse">🧠 Trick Your Brain</h1>
+    <p class="text-lg text-gray-300 max-w-lg mx-auto">
+      Test how your perception and attention can be fooled by famous visual illusions.
+      Choose wisely — your brain might surprise you!
+    </p>
+    <button onclick="startGame()"
+      class="bg-blue-600 hover:bg-blue-700 text-white text-lg px-8 py-3 rounded-xl transition">
+      Play
+    </button>
+  </div>
+
+  <!-- Game Container -->
+  <div id="game-container" class="hidden text-center space-y-6 max-w-2xl fade">
+    <img id="illusion-image" src="" alt="Illusion"
+         class="w-full rounded-2xl shadow-xl mx-auto fade" />
+    <p id="illusion-text" class="text-lg italic text-gray-300"></p>
+
+    <div id="answer-btns" class="flex justify-center gap-6">
+      <button onclick="answer(true)"
+        class="bg-green-600 hover:bg-green-700 px-6 py-3 rounded-xl transition">Yes</button>
+      <button onclick="answer(false)"
+        class="bg-red-600 hover:bg-red-700 px-6 py-3 rounded-xl transition">No</button>
+    </div>
+
+    <button id="next-btn" onclick="nextIllusion()" class="hidden bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-xl transition">
+      Next ➡️
+    </button>
+
+    <div class="w-full bg-gray-700 rounded-full h-3 mt-4">
+      <div id="progress-bar"
+           class="bg-blue-500 h-3 rounded-full w-0 transition-all duration-700"></div>
+    </div>
+
+    <h2 id="feedback" class="text-lg text-gray-400 min-h-[2rem]"></h2>
+    <h2 id="score" class="text-lg text-gray-400">Score: 0 / 15</h2>
+  </div>
+
+  <!-- End Screen -->
+  <div id="end-screen" class="hidden text-center fade space-y-6">
+    <h2 class="text-4xl font-bold">🎉 Well Done!</h2>
+    <p id="final-message" class="text-lg"></p>
+    <button onclick="restartGame()"
+      class="bg-blue-600 hover:bg-blue-700 text-white text-lg px-8 py-3 rounded-xl transition">
+      Play Again
+    </button>
+  </div>
+
+  <script>
+    const illusions = [
+      {img:"images/Simultaneous_contrast2.svg",question:"Are the squares same color?",answer:true,
+       feedback:"They are identical shades! Shadow and context trick your brain."},
+      {img:"images/Cafe_Wall_Illusion.svg",question:"Are these lines parallel?",answer:true,
+       feedback:"They look bent, but they’re perfectly parallel (Café wall illusion)."},
+      {img:"images/Hermangrid.gif",question:"Do you see gray dots that vanish when you stare?",answer:true,
+       feedback:"That’s the Hermann grid illusion — lateral inhibition in your retina."},
+      {img:"images/Hollow-face-illusion.gif",question:"Is the face hollow?",answer:false,
+       feedback:"Your brain assumes convex faces — top-down processing wins."},
+      {img:"images/Mond-vergleich.svg",question:"Are the orange circles different in size?",answer:true,
+       feedback:"Same size! Surrounding context changes your judgment (Ebbinghaus)."},
+      {img:"images/mlillusion.webp",question:"Are these lines the same length?",answer:true,
+       feedback:"Both lines are equal — this illusion fools depth perception."},
+      {img:"images/snakes.png",question:"Do you see motion in this still picture?",answer:true,
+       feedback:"Peripheral drift illusion — micro eye movements create motion perception."},
+      {img:"images/checkerboard_illusion.jpg",question:"Is the checkerboard perfectly square?",answer:true,
+       feedback:"Yes — your brain distorts perspective cues into a 3D effect."},
+      {img:"images/MotionBlindness.gif",question:"Is the central dot moving?",answer:false,
+       feedback:"It’s static — your motion detectors adapt unevenly across your retina."},
+      {img:"images/Relcontrastrp.jpg",question:"Do you see two different colors here?",answer:false,
+       feedback:"Actually one color! Simultaneous contrast alters your perception."},
+      
+    ];
+
+    let current = 0, score = 0;
+
+    function startGame(){
+      document.getElementById('start-screen').classList.add('hidden');
+      document.getElementById('game-container').classList.remove('hidden');
+      nextIllusion();
+    }
+
+    function nextIllusion(){
+      if(current < illusions.length){
+        const ill = illusions[current];
+        const img = document.getElementById('illusion-image');
+        img.style.opacity = 0;
+        setTimeout(()=>{ img.src = ill.img; img.style.opacity = 1; },200);
+        document.getElementById('illusion-text').innerText = ill.question;
+        document.getElementById('feedback').innerText = "";
+        document.getElementById('progress-bar').style.width =
+          `${(current/illusions.length)*100}%`;
+        document.getElementById('answer-btns').classList.remove('hidden');
+        document.getElementById('next-btn').classList.add('hidden');
+      } else {
+        endGame();
+      }
+    }
+
+    function answer(userAns){
+      const ill = illusions[current];
+      const feedback = document.getElementById('feedback');
+      if(userAns === ill.answer){
+        score++;
+        feedback.innerHTML = "✅ Correct! " + ill.feedback;
+      } else {
+        feedback.innerHTML = "❌ Oops! " + ill.feedback;
+      }
+      document.getElementById('score').innerText =
+        `Score: ${score} / ${illusions.length}`;
+      document.getElementById('answer-btns').classList.add('hidden');
+      document.getElementById('next-btn').classList.remove('hidden');
+      current++;
+    }
+
+    function endGame(){
+      document.getElementById('game-container').classList.add('hidden');
+      document.getElementById('end-screen').classList.remove('hidden');
+      document.getElementById('progress-bar').style.width="100%";
+      document.getElementById('final-message').innerText =
+        `You got ${score} out of ${illusions.length}! 
+        Each illusion shows how perception, context, and experience shape reality.`;
+    }
+
+    function restartGame(){
+      current=0; score=0;
+      document.getElementById('end-screen').classList.add('hidden');
+      document.getElementById('start-screen').classList.remove('hidden');
+      document.getElementById('progress-bar').style.width="0%";
+      document.getElementById('score').innerText="Score: 0 / 15";
+    }
+  </script>
+</body>
+</html>
